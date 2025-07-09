@@ -42,59 +42,89 @@
   <section id="resumen">
     <h2>Resumen del TFG</h2>
     <div style="background: #e3ecfa; border-left: 4px solid #2157A3; padding: .7rem 1rem; margin: 1rem 0;">
-      <strong>Título:</strong> [Diseño y puesta en marcha de células robotizadas orientadas a la docencia universitaria]<br>
-      <strong>Resumen:</strong> [Este Trabajo de Fin de Grado presenta el dise˜no, simulaci´on e implementaci´on
-de dos estaciones robotizadas: una colaborativa con dos robots Omron eCobra 600, y
-otra equipada con cinta transportadora para simular procesos industriales reales. Las
-estaciones fueron dise˜nadas utilizando herramientas CAD y simuladas en RoboDK,
-generando programas adaptados al lenguaje V+ de los robots industriales empleados.
-A pesar de que problemas t´ecnicos impidieron su completa implementaci´on f´ısica, el
-proyecto aporta documentaci´on t´ecnica exhaustiva y recursos did´acticos preparados
-para futuras aplicaciones educativas. El objetivo principal es mejorar la formaci´on
-pr´actica universitaria, ofreciendo a los estudiantes escenarios realistas que reflejan
-los est´andares tecnol´ogicos actuales en la industria rob´otica.
-      Aunque no fue posible completar la implementaci´on f´ısica total de las estaciones
-debido a ciertas limitaciones t´ecnicas, el proyecto logr´o desarrollar modelos CAD detallados, simular correctamente el funcionamiento de ambas estaciones en RoboDK,
-generar y adaptar programas en lenguaje V+ para su ejecuci´on en los robots Omron
-eCobra 600, e iniciar con ´exito pruebas de integraci´on en el entorno de laboratorio.
-Adem´as, se elabor´o una documentaci´on t´ecnica que permitir´a retomar y continuar
-el trabajo en futuras ediciones de la asignatura o proyectos de investigaci´on.]
+      <strong>Título:</strong> Diseño y puesta en marcha de células robotizadas orientadas a la docencia universitaria<br>
+      <strong>Resumen:</strong> Este Trabajo de Fin de Grado presenta el diseño, simulación e implementación de dos estaciones robotizadas: una colaborativa con dos robots Omron eCobra 600, y otra equipada con cinta transportadora para simular procesos industriales reales. Las estaciones fueron diseñadas utilizando herramientas CAD y simuladas en RoboDK, generando programas adaptados al lenguaje V+ de los robots industriales empleados. A pesar de que problemas técnicos impidieron su completa implementación física, el proyecto aporta documentación técnica exhaustiva y recursos didácticos preparados para futuras aplicaciones educativas. El objetivo principal es mejorar la formación práctica universitaria, ofreciendo a los estudiantes escenarios realistas que reflejan los estándares tecnológicos actuales en la industria robótica.
+
+Aunque no fue posible completar la implementación física total de las estaciones debido a ciertas limitaciones técnicas, el proyecto logró desarrollar modelos CAD detallados, simular correctamente el funcionamiento de ambas estaciones en RoboDK, generar y adaptar programas en lenguaje V+ para su ejecución en los robots Omron eCobra 600, e iniciar con éxito pruebas de integración en el entorno de laboratorio. Además, se elaboró una documentación técnica que permitirá retomar y continuar el trabajo en futuras ediciones de la asignatura o proyectos de investigación.
     </div>
     <p>
-      <strong>Tecnologías utilizadas:</strong> RoboDK, PLC Omron NJ, visión artificial, Python.
+      <strong>Tecnologías utilizadas:</strong> RoboDK, SolidWorks, Sysmac Studio, Python, Robot Omron eCobra 600 pro, Omron NJ-501 R300, Robot Industrial Staübli.
     </p>
   </section>
 
   <section id="manual">
-    <h2>Manual rápido para continuar el trabajo</h2>
-    <ul>
-      <li><strong>Requisitos previos:</strong> [Especifica software, hardware, versiones]</li>
-      <li><strong>Instalación:</strong> [Explica brevemente cómo instalar lo necesario]</li>
-      <li><strong>Cómo usar el sistema:</strong> [Pasos para abrir simulaciones, cargar el proyecto, ejecutar pruebas]</li>
-      <li><strong>Estructura de carpetas:</strong> [Explica dónde están los archivos clave: simulaciones, scripts, documentación]</li>
-      <li><strong>Recomendaciones y advertencias:</strong> [Consejos para evitar errores frecuentes]</li>
-    </ul>
-    <p>
-      <em>Para cualquier duda técnica puedes contactar conmigo (ver sección Contacto).</em>
-    </p>
-  </section>
+  <h2>Manual rápido para continuar el trabajo</h2>
+  <ul>
+    <li><strong>Requisitos previos:</strong>
+      <ul>
+        <li>Ordenador con Windows 10 o superior.</li>
+        <li>RoboDK (versión recomendada: 5.5 o superior, licencia educativa).</li>
+        <li>SolidWorks (para edición/visualización de modelos CAD).</li>
+        <li>Acceso a la documentación técnica (PDFs y manuales incluidos en la carpeta de <a href="https://drive.google.com/drive/folders/1V7MlEj2X_MAyY85hKqtiCwe6o93ga-ta" target="_blank">Google Drive</a>).</li>
+        <li>(Opcional) Sysmac Studio y Omron ACE para integración con hardware real y pruebas en laboratorio.</li>
+      </ul>
+    </li>
+    <li><strong>Instalación:</strong>
+      <ul>
+        <li>Instala RoboDK desde la web oficial (<a href="https://robodk.com/download" target="_blank">robodk.com/download</a>).</li>
+        <li>Solicita o activa la licencia educativa a través del departamento universitario si es necesario.</li>
+        <li>Instala SolidWorks para manipulación de archivos CAD (.SLDPRT/.STEP).</li>
+        <li>Descarga los archivos del proyecto desde la carpeta de Google Drive (modelos, simulaciones y documentación).</li>
+        <li>(Opcional) Instala Sysmac Studio y Omron ACE si vas a trabajar con los robots reales.</li>
+      </ul>
+    </li>
+    <li><strong>Cómo usar el sistema:</strong>
+      <ul>
+        <li>Abre RoboDK e importa el proyecto correspondiente (.rdk) o el archivo de simulación (.html/.rdk).</li>
+        <li>Navega por las estaciones (colaborativa o cinta transportadora) usando los menús y vistas del proyecto.</li>
+        <li>Ejecuta las simulaciones usando los controles de RoboDK para validar trayectorias y secuencias.</li>
+        <li>Para modificar rutas o rutinas, edita los targets y programas directamente en RoboDK.</li>
+        <li>Si necesitas el código para los robots, utiliza la función de postprocesado para exportar en lenguaje V+.</li>
+        <li>Consulta los manuales y documentación técnica para detalles específicos de uso y configuración.</li>
+      </ul>
+    </li>
+    <li><strong>Estructura de carpetas:</strong>
+      <ul>
+        <li><strong>/simulaciones:</strong> Archivos de simulación RoboDK (.rdk, .html).</li>
+        <li><strong>/modelos_cad:</strong> Modelos 3D de piezas y estaciones (.SLDPRT, .STEP).</li>
+        <li><strong>/codigo:</strong> Scripts de postprocesado y ejemplos en lenguaje V+.</li>
+        <li><strong>/docs:</strong> Manuales, memoria del TFG y presentaciones.</li>
+        <li><strong>/videos:</strong> (Opcional) Vídeos demostrativos del funcionamiento de las estaciones.</li>
+      </ul>
+    </li>
+    <li><strong>Recomendaciones y advertencias:</strong>
+      <ul>
+        <li>Lee primero la documentación antes de realizar modificaciones en los archivos de simulación.</li>
+        <li>Mantén copias de seguridad de los archivos originales.</li>
+        <li>Si trabajas con hardware real, asegúrate de seguir todos los protocolos de seguridad indicados en el laboratorio.</li>
+        <li>Consulta con el personal docente ante cualquier duda sobre versiones de software o configuración.</li>
+        <li>Para una transferencia exitosa del código del simulador al robot físico, verifica siempre la compatibilidad del postprocesador y adapta las rutas a la configuración real.</li>
+      </ul>
+    </li>
+  </ul>
+  <p><em>Para cualquier duda técnica puedes contactar conmigo (ver sección Contacto).</em></p>
+</section>
+
 
   <section id="doc">
-    <h2>Documentación técnica</h2>
-    <ul>
-      <li><strong>Estructura del proyecto:</strong> [Breve descripción de carpetas, archivos y lógica del sistema]</li>
-      <li><strong>Simulación RoboDK:</strong>
-        <a href="simulacion/index.html" target="_blank">Ver simulación interactiva</a>
-        <br><small>(Se abrirá una nueva ventana. Puede tardar en cargar.)</small>
-      </li>
-      <li><strong>Memorias, anexos y código:</strong>
-        <a href="https://drive.google.com/drive/folders/1V7MlEj2X_MAyY85hKqtiCwe6o93ga-ta" target="_blank">
-          Acceder a la carpeta de Google Drive
-        </a>
-        <br><small>Desde esta carpeta puedes ver y descargar las memorias, anexos y documentación relevante.</small>
-      </li>
-    </ul>
-  </section>
+  <h2>Documentación técnica</h2>
+  <ul>
+    <li><strong>Estructura del proyecto:</strong> [Breve descripción de carpetas, archivos y lógica del sistema]</li>
+    <li><strong>Simulación RoboDK:</strong>
+      <a href="https://drive.google.com/drive/folders/1uXIqrnlMsHVH_Idj2euvFDdLgQsjysen" target="_blank" style="color:#2a1cff; text-decoration:underline;">
+        Ver simulaciones interactivas (archivos HTML)
+      </a>
+      <br><small>(Se abrirá una nueva ventana. Puede tardar en cargar o requerir descarga.)</small>
+    </li>
+    <li><strong>Memorias, anexos y código:</strong>
+      <a href="https://drive.google.com/drive/folders/1V7MlEj2X_MAyY85hKqtiCwe6o93ga-ta" target="_blank" style="color:#4b1694; text-decoration:underline;">
+        Acceder a la carpeta de Google Drive
+      </a>
+      <br><small>Desde esta carpeta puedes ver y descargar las memorias, anexos y documentación relevante.</small>
+    </li>
+  </ul>
+</section>
+
 
   <section id="resultados">
     <h2>Resultados y mejoras</h2>
