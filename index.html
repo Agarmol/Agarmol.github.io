@@ -18,7 +18,6 @@
     ul { padding-left: 1.2rem; }
     .cv-link { display: inline-block; margin: .5rem 0; padding: 0.6em 1.4em; background: #2157A3; color: #fff; border-radius: 7px; text-decoration: none; font-weight: 500;}
     .cv-link:hover { background: #184070; }
-    .resaltado { background: #e3ecfa; border-left: 4px solid #2157A3; padding: .7rem 1rem; margin: 1rem 0;}
     @media (max-width: 650px) {
       main { padding: 1rem 0.5rem; }
       header h1 { font-size: 1.6rem; }
@@ -32,7 +31,6 @@
 </header>
 
 <nav>
-  <a href="#sobre-mi">Sobre mí</a>
   <a href="#resumen">Resumen TFG</a>
   <a href="#manual">Manual para continuar</a>
   <a href="#doc">Documentación</a>
@@ -41,32 +39,14 @@
 </nav>
 
 <main>
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>
-      Graduado en [Nombre Grado] por la Universitat Jaume I.<br>
-      Especializado en automatización industrial, robótica y programación.<br>
-      <a class="cv-link" href="docs/CV_Adrian_Garcia_Molla.pdf" target="_blank">Descargar CV en PDF</a> &nbsp; 
-      <a class="cv-link" href="https://www.linkedin.com/in/tu-linkedin" target="_blank">LinkedIn</a>
-    </p>
-    <ul>
-      <li>Experiencia con RoboDK, Python, PLC Omron, visión artificial.</li>
-      <li>Competencias en integración de sistemas y documentación técnica.</li>
-      <li>Buscando oportunidades en automatización, IA aplicada y robótica industrial.</li>
-    </ul>
-  </section>
-
   <section id="resumen">
     <h2>Resumen del TFG</h2>
-    <div class="resaltado">
+    <div style="background: #e3ecfa; border-left: 4px solid #2157A3; padding: .7rem 1rem; margin: 1rem 0;">
       <strong>Título:</strong> [Pon aquí el título de tu TFG]<br>
-      <strong>Resumen:</strong> [Describe el objetivo, el problema a resolver, metodología y resultados principales. Por ejemplo: “Diseño e implementación de una celda automatizada de ensamblaje utilizando RoboDK y control PLC, con integración de visión artificial para control de calidad automático.”]
+      <strong>Resumen:</strong> [Describe el objetivo, el problema a resolver, metodología y resultados principales.]
     </div>
     <p>
-      <strong>Tecnologías utilizadas:</strong> RoboDK, PLC Omron NJ, visión artificial, Python.<br>
-      <strong>Documentos:</strong> 
-      <a href="docs/Memoria_TFG.pdf" target="_blank">Memoria TFG (PDF)</a> · 
-      <a href="docs/Presentacion_TFG.pdf" target="_blank">Presentación (PDF)</a>
+      <strong>Tecnologías utilizadas:</strong> RoboDK, PLC Omron NJ, visión artificial, Python.
     </p>
   </section>
 
@@ -88,11 +68,16 @@
     <h2>Documentación técnica</h2>
     <ul>
       <li><strong>Estructura del proyecto:</strong> [Breve descripción de carpetas, archivos y lógica del sistema]</li>
-      <li><strong>Simulación RoboDK:</strong> 
+      <li><strong>Simulación RoboDK:</strong>
         <a href="simulacion/index.html" target="_blank">Ver simulación interactiva</a>
         <br><small>(Se abrirá una nueva ventana. Puede tardar en cargar.)</small>
       </li>
-      <li><strong>Descarga de anexos y código:</strong> [Pon enlaces a otros documentos relevantes, si los tienes]</li>
+      <li><strong>Memorias, anexos y código:</strong>
+        <a href="https://drive.google.com/drive/folders/1V7MlEj2X_MAyY85hKqtiCwe6o93ga-ta" target="_blank">
+          Acceder a la carpeta de Google Drive
+        </a>
+        <br><small>Desde esta carpeta puedes ver y descargar las memorias, anexos y documentación relevante.</small>
+      </li>
     </ul>
   </section>
 
@@ -115,7 +100,9 @@
     <p><small>Agradecimientos a mis tutores, compañeros y a la Universitat Jaume I.</small></p>
   </section>
 </main>
-  <div id="toast-aviso" style="display:none; position:fixed; top:30px; left:50%; transform:translateX(-50%); background:#ffe082; color:#3c2f0b; padding:16px 28px; border-radius:8px; box-shadow:0 2px 10px #0002; font-size:1.07em; z-index:9999;">
+
+<!-- Aviso toast de web en construcción -->
+<div id="toast-aviso" style="display:none; position:fixed; top:30px; left:50%; transform:translateX(-50%); background:#ffe082; color:#3c2f0b; padding:16px 28px; border-radius:8px; box-shadow:0 2px 10px #0002; font-size:1.07em; z-index:9999;">
   ⚠️ Esta web está en construcción y se irá completando. Gracias por tu visita.
 </div>
 <script>
@@ -124,7 +111,7 @@
     toast.style.display = 'block';
     setTimeout(function() {
       toast.style.display = 'none';
-    }, 5200); // Se muestra durante 5,2 segundos
+    }, 5200);
   }
 </script>
 </body>
